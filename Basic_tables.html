@@ -1,0 +1,135 @@
+<!DOCTYPE html>   
+<html>   
+  <head>   
+    <meta charset="utf-8">   
+    <title>Basic Tables</title>   
+  </head>   
+  <body> 
+  <!-- This is exercise #1 -->
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Product</th>
+          <th scope="col">Quantity</th> 
+          <th scope="col">Price</th>
+        </tr>
+      </thead>  
+      <tbody>
+        <tr>
+          <td>Apple</td>
+          <td>34</td>
+          <td>$3.99 / lb</td>
+        </tr>
+        <tr>
+          <td>Banana</td>
+          <td>116</td>
+          <td>$1.69 / lb</td>
+        </tr>
+        <tr>
+          <td>Carrot</td>
+          <td>42</td>
+          <td>$2.49 / lb</td>
+        </tr>
+        <tr>
+          <td>Kiwi</td>
+          <td>18</td>
+          <td>$0.69 / lb</td>
+        </tr>
+      </tbody>  
+  </table>
+<br/>
+<br/>
+<br/>
+<br/>
+<!-- This is exercise #2 -->
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Major</th>
+        <th scope="col">GPA</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Chris Lee</th>
+        <td>Supply Chain Management</td>
+        <td>3.7</td>
+      </tr>
+      <tr>
+        <th>Shane Riley</th>
+        <td>Photojournalism</td>
+        <td>3.8</td>
+      </tr>
+      <tr>
+        <th>Kevin Wange</th>
+        <td>Computer Science</td>
+        <td>4.0</td>
+      </tr>
+    </tbody>
+  </table>
+<br/>
+<br/>
+<br/>
+<br/>
+ <!-- This is exercise #3.  I noticed in the solution that the attribute rowspan
+       was used.  I used and empty <dt> tag to create the space. I didn't want 
+       to change it because I wanted you to see my mistake -->
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Red</th>
+        <td>Meiomi Pinot Noir</td>
+        <td>$17.99</td>
+          <tr>
+            <td></td>
+            <td>Radius Cabernet</td>
+            <td>$9.99</td>
+              <tr>
+                <td></td>
+                <td>Apothic Red</td>
+                <td>$7.97</td>
+              </tr>
+          </tr>
+      </tr> 
+      <tr>
+        <th scope="row">White</th>
+        <td>Cloud Break Chardonnay</td>
+        <td>$9.99</td>
+          <tr>
+            <td></td>
+            <td>Kendall Jackson Chardonnay</td>
+            <td>$9.99</td>
+              <tr>
+                <td></td>
+                <td>Kim Crawford Sauvignon Blanc</td>
+                <td>$9.97</td>
+              </tr>
+          </tr>
+      </tr>  
+      <tr>
+        <th scope="row">Sake</th>
+        <td>Gekkeikan Sake</td>
+        <td>$9.99</td>
+          <tr>
+            <td></td>
+            <td>Mura Mura Mountain Sake</td>
+            <td>$15.99</td>
+              <tr>
+                <td></td>
+                <td>TY KU Sake Jummai Ginjo Black</td>
+                <td>$21.99</td>
+              </tr>
+          </tr>
+      </tr>
+    </tbody>
+  </table>
+</body>   
+</html> 
