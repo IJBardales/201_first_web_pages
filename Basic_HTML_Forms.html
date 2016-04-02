@@ -1,0 +1,139 @@
+<!DOCTYPE html>   
+ <html>   
+ <head>   
+   <meta charset="utf-8">   
+   <title></title>  
+
+    <style>
+      form {
+         margin: 0 auto;
+         width: 400px;
+         padding: 1em;
+         border: 1px solid #CCC;
+         border-radius: 1em;
+       }
+
+
+	form div + div {
+ 	   margin-top: 1em;
+	}
+
+  
+	label {
+    display: inline-block;
+	  width: 90px;
+	}
+
+	input, textarea {
+	  font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	  border: 1px solid #999;
+  }
+
+
+
+	input:focus, textarea:focus {
+	   border-color: #000;
+	}
+
+	
+	textarea {
+	   vertical-align: top;
+	   height: 5em;
+	   resize: vertical;
+	}
+
+	.button {
+	   padding-left: 90px;
+	}
+
+	
+	button {
+	  margin-left: .5em;
+	}
+
+  select, #movie {
+    display: block;
+  }
+	
+	
+</style> 
+ </head>   
+ <body> 
+	<!--This is exercise 1 -->
+	<!-- When I saw that this section was going to concentrate on forms,
+	     I went to the Mozilla Developer site to look over forms and they
+	     had a form exercise with HTML/CSS and that's why these exercises
+	     have the styles they do. -->
+   <form action="" method="post">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" required id="name" />
+      </div>
+      <div>
+        <label for="mail">Email</label>
+        <input type="email" required id="mail" />
+      </div>
+      <div>
+        <label for="phone">Phone Num</label>
+        <input type="tel" required id="phone" />
+      </div>	
+      <div>
+        <label for="msg">Message</label>
+	      <textarea cols="30" rows="20" id="msg" required></textarea>
+       </div>
+       <div class="button">
+	      <button type="submit">Send Ur Message</button>
+       </div>
+       <div class="button">
+	      <button type="reset">Reset Form</button>
+       </div>     	
+     </form>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+	<!--This is exercise 2 -->
+	<!--I solved this second requisite with a drop down instead of radio buttons -->
+
+
+  <form action="" method="post">
+	  <input type="search" autosave>    
+	  <select>
+	    <option>TV</option>
+	    <option>Movies</option>
+	    <option>Music</music>
+	  </select>   
+	  <button type="button">Search</button>
+  </form>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<!-- This is exercise 3 -->
+	<!-- Ok I spent a whole day trying to fix the label for the checkbox,
+	     finally I just had to look at the solution and even when I changed it
+	     it still didn't change. -->
+	     
+  <form action="" method="post">
+    <label for="movie">Movies</label>
+    <select id="movie">
+        <option>Looper</option>
+        <option>Frozen</option>
+        <option>Tommy Boy</option>
+    </select>
+    <label for="rate">Rate Movie</label>
+    <input type="range" min="1" max="5" step="1" id="rate" />
+    <input type="checkbox"  value="add to Faves"checked />Add to Faves
+    <button type="submit" id="movies">Submit Rate</button>
+    
+  </form>
+
+ </body>   
+ </html> 
