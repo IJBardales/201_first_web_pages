@@ -58,7 +58,9 @@
     display: block;
   }
 	
-	
+	#tv, #movies, #tunes {
+	  width: 0;
+	}
 </style> 
  </head>   
  <body> 
@@ -103,13 +105,15 @@
 
 
   <form action="" method="post">
-	  <input type="search" autosave>    
-	  <select>
-	    <option>TV</option>
-	    <option>Movies</option>
-	    <option>Music</music>
-	  </select>   
-	  <button type="button">Search</button>
+    <button type="button">Search</button>
+	  <input type="search" autosave>  
+	  <fieldset>
+	    <label for ="tv"><input type="radio" id="tv">TV</label>
+	    <label for ="movie"><input type="radio" id="movies">Movies</label>
+	    <label for ="tunes"><input type="radio" id="tunes">Music</label>
+	  </fieldset>
+	  
+	  
   </form>
 	<br>
 	<br>
@@ -130,8 +134,8 @@
     </select>
     <label for="rate">Rate Movie</label>
     <input type="range" min="1" max="5" step="1" id="rate" />
-    <input type="checkbox"  value="add to Faves"checked />Add to Faves
-    <button type="submit" id="movies">Submit Rate</button>
+    <label><input type="checkbox"  value="add to Faves"checked />Add to Faves</label>
+    <button type="submit" id="rate">Submit Rate</button>
     
   </form>
 
